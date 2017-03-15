@@ -62,7 +62,7 @@ To test it clone the project using
 ```sh
 $ git clone git@bitbucket.org :< accountname>/<reponame>.git
 ```
-### deploy.ssh
+### deploy.sh
 Edit the variables to the appropiate paths and settings to match your project configuration 
 
 To deploy you can run it manually using 
