@@ -1,3 +1,28 @@
+
+## Configuration
+
+ By default `deploy(1)` will look for _./deploy.conf_, consisting of one or more environments, `[stage]`, `[production]`, etc, followed by directives.
+
+    [stage]
+    key /path/to/some.pem
+    user deployer
+    host n.n.n.n
+    port nn
+    repo git@github.com:visionmedia/express.git
+    path /var/www/myapp.com
+    ref origin/master
+    post-deploy /var/www/myapp.com/update.sh
+
+## Directives
+
+### key (optional)
+
+  Path to identity file used by `ssh -i`.
+
+      key /path/to/some.pem
+      
+##      
+##
 ## Deploy on a Docker container 
 This is a basic demo showing how to deploy a project from Git to a running Docker container. 
 
