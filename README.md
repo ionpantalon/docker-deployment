@@ -8,7 +8,7 @@
     user deployer
     host n.n.n.n
     port nn
-    repo git@github.com:visionmedia/express.git
+    repo git@github.com:test/test.git
     path /var/www/myapp.com
     ref origin/master
     post-deploy /var/www/myapp.com/update.sh
@@ -22,7 +22,6 @@
       key /path/to/some.pem
       
 ##      
-##
 ## Deploy on a Docker container 
 This is a basic demo showing how to deploy a project from Git to a running Docker container. 
 
